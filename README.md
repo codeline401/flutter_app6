@@ -2,15 +2,19 @@
 
 A new Flutter project.
 
-## Getting Started
+Here we have created with homepage that can navigate to the About page as a fullscreenDialog.
 
-This project is a starting point for a Flutter application.
+The fullscreenDialog gives the about page a default close action button.
+By tapping the home page's FloatingActionButton, the Navigator MaterialPageRoute builder builds the contents for the route,
+in this case the gratitude page.
 
-A few resources to get you started if this is your first Flutter project:
+Through the Gratitude constructor, data is passed tu unselected Radio buttons.
+From the gratitude page, a list of Radio buttons gives a choice to select a gratitude.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+By tapping the AppBar action button, the Navigator.pop method passes the selected gratitude value back to the Home Text widget.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+From the home page, we called the Navigator.push method by using the await keyword,
+and the has being waiting to receive à value.
+
+Once the About page's Navogator.push method is called, it returns a value to the home page's _gratitudeResponse variable.
+Using a await keyword is a powerful and straightforward feature to implement.
